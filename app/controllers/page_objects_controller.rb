@@ -1,8 +1,6 @@
 class PageObjectsController < ApplicationController
   include PageObjectsControllerHelper
-  # Don't worry about finding the page object on show, edit, or update!  We're not writing to it.
-  before_filter :find_page_object, :only => [ :destroy, :update_valid ]
-  # before_filter :find_page_object, :only => [ :show, :edit, :update, :destroy, :update_valid ]
+  before_filter :find_page_object, :only => [ :show, :edit, :update, :destroy, :update_valid ]
   
   # GET /page_objects
   # GET /page_objects.xml
