@@ -1,0 +1,8 @@
+<% fields_for_page_object do |f| -%>
+  <div class="header">
+    <h1><%=h request.headers[ThriveSmart::Constants.ts_page_title_headers_key] %></h1>
+    <span>Change this Title Above!</span>
+  </div>
+<% end -%>
+
+<% javascripts 'page-title-edit' %>
